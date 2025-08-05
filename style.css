@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #33343D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+h1{
+    color: #44C396;
+}
+.f_awesome{
+    color: gold;
+    font-size: 2rem;
+}
+.p1_box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.p1_text{
+    color: #44C396;
+}
+.p2_box{
+     display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.p2_text{
+    color: #44C396;
+}
+.dice_1{
+    height: 30vh;
+    
+}
+.dice_2{
+    height: 30vh;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media  (max-width: 360px){
+    .dice_1{
+    height: 15vh;
+    
+}
+h1{
+    color: blue;
+}
+.dice_2{
+    height: 15vh;
+}
+body{
+    padding-bottom:8rem ;
+}
+}
+
+
+@media  (max-width: 415px){
+    .dice_1{
+    height: 15vh;
+    
+}
+h1{
+    color: red;
+}
+.dice_2{
+    height: 15vh;
+}
+body{
+    padding-bottom:5rem ;
+}
+}
+.invisible{
+    visibility:hidden;
+}
