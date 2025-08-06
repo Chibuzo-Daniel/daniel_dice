@@ -16,24 +16,27 @@ function dice2(){
     return image;
 }
 
-var isReloaded = performance.getEntriesByType("navigation")[0].type === "reload";
-if (isReloaded){
-    var value1 = dice1();
+
+function toss(){
+ var value1 = dice1();
 var value2 = dice2();
 
 var position1 = images.indexOf(value1)
 var position2 = images.indexOf(value2)
  if (position2 > position1){
-    document.querySelector("h1").innerHTML=" <i class='fa-solid fa-trophy f_awesome'></i> Player 2 Wins!"
+    document.querySelector("h1").innerHTML="Player 2 Wins! <i class='fa-solid fa-trophy f_awesome'></i>"
  }
  if (position1 > position2){
-    document.querySelector("h1").innerHTML="Player 1 Wins! <i class='fa-solid fa-trophy f_awesome'></i>"
+    document.querySelector("h1").innerHTML=" <i class='fa-solid fa-trophy f_awesome'></i> Player 1 Wins!"
  }
  if(position2 === position1){
-    document.querySelector("h1").innerText="Draw !!!"
-    document.querySelector(".f_awesome").classList.add("invisible")
+    document.querySelector("h1").innerText="Draw!!!"
+    document.querySelector(".f_awesome")?.classList.add("invisible")
  }
+ 
 }
+document.querySelector(".btn").onclick = toss;
+
  
 
  

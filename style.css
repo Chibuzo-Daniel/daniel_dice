@@ -60,6 +60,22 @@ h1{
     align-items: center;
     gap: 1rem;
 }
+.btn{
+    color: gold;
+    background-color: #44C396;
+    border: none;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor:grab;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0.1, 0.5, 0.1, 0.8);
+    transition: 0.3s ease;
+}
+
+.toss{
+    color: #33343D;
+}
 
 @media  (max-width: 360px){
     .dice_1{
